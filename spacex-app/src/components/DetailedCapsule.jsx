@@ -5,8 +5,8 @@ export default function DetailedCapsule({ capsule, close }) {
     <>
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none">
         <div className="relative w-auto my-6 mx-72 w-screen">
-          <div className="border-0 rounded-lg shadow-2xl text-white relative flex flex-col w-full bg-zinc-800 outline-none focus:outline-none">
-            <div className="bg-zinc-600 rounded-xl shadow-xl m-2">
+          <div className="border-0 rounded-lg shadow-2xl text-white relative flex flex-col w-full bg-zinc-900 outline-none focus:outline-none">
+            <div className="bg-zinc-700 rounded-xl shadow-xl m-2">
               <img src="/images/dummy.svg" className="mx-auto p-2 rounded-md w-1/5" alt="capsule" />
             </div>
             <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">

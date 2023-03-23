@@ -66,16 +66,20 @@ export default function Capsules() {
       {isLoading && <Loader />}
       {!isLoading && (
         <div className="flex flex-wrap py-10 gap-20 justify-center">
-          {capsules?.map((capsule, key) => (
-            <Capsule
-              key={key}
-              capsule={capsule}
-              selectCapsule={() => {
-                setFocusedCapsule(capsule);
-                setViewCapsule(true);
-              }}
-            />
-          ))}
+          {capsules.length > 0 ? (
+            capsules?.map((capsule, key) => (
+              <Capsule
+                key={key}
+                capsule={capsule}
+                selectCapsule={() => {
+                  setFocusedCapsule(capsule);
+                  setViewCapsule(true);
+                }}
+              />
+            ))
+          ) : (
+            <div className="text-white text-xl mt-20">No Capsules to display.</div>
+          )}
         </div>
       )}
       {viewCapsule && (
